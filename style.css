@@ -1,0 +1,8 @@
+:root{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-items{
+    list-style-type: none;
+    text-transform: capitalize;
+}
