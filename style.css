@@ -1,11 +1,57 @@
 :root{
     font-family: 'Quicksand', sans-serif;
 }
+body{
+    display: grid;
+    grid-auto-rows: minmax(1rem, auto);
+    height: auto;
 
+}
 .nav-items{
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     text-transform: capitalize;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+}
+header{
+    background-color: #007653;
+    color: white;
+    width: 100%;
+    height: 5rem;
+
+}
+.nav-items li:first-child {
+    grid-column: span 2;
+}
+#logo{
+    height: 2rem;
 }
 li{
     list-style-type: none;
+}
+#landing{
+    background-color: #F9A21B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+button{
+    border: solid black .14rem;
+    border-radius: .7rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #FFEBE4;
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 1px 2px 3px 1px;
 }
