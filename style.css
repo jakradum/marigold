@@ -39,6 +39,14 @@ header{
     color: white;
 
 }
+header.sticky{
+    position: sticky;
+    top: -100px;
+    transition: top .8s ease;
+}
+header.active{
+    top: 0;
+}
 header.drop{
 
     background-color:#FFEBE4;
