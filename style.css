@@ -15,9 +15,16 @@ body{
     text-transform: capitalize;
     align-items: center;
 }
-nav{
+.mobile-menu{
     background-color: #007653;
     color: white;
+}
+.mobile-menu.drop{
+    background-color: #FFEBE4;
+    color: white;
+}
+nav .drop{
+    background-color:  #FFEBE4;
 }
  /* nav li:hover{
     background-color: #075840;
@@ -29,6 +36,11 @@ header{
     width: 100%;
     background-color: #007653;
     height: auto;
+
+}
+header.drop{
+
+    background-color:#FFEBE4;
 
 }
 .nav-items li:first-child {
