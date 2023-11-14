@@ -46,10 +46,11 @@ header.sticky{
 }
 header.active{
     top: 0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 header.drop{
-
     background-color:#FFEBE4;
+
 
 }
 .nav-items li:first-child {
@@ -67,12 +68,18 @@ li{
     list-style-type: none;
 }
 #landing{
-    background-color: #F9A21B;
+    background-image: url(bg.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:contain;
+    background-blend-mode: overlay;
+    margin: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 h1{
     font-size: clamp(2rem, 4vw, 4rem);
@@ -88,7 +95,7 @@ button{
     cursor: pointer;
 }
 button:hover{
-    box-shadow: 1px 2px 3px 1px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .mobile-menu{
    display: flex;
@@ -180,6 +187,7 @@ button:hover{
     padding: 0 0 0 1rem;
     margin: 0;
     border: none;
+    
 }
 
 .mobile-dropdown.show .menu-names {
@@ -189,11 +197,13 @@ button:hover{
     padding: 0 0 0 1rem;
     margin: 0;
     border: none;
+
 }
 
   .mobile-dropdown li {
     color: black;
     margin: 1rem .3rem 1rem 2rem;
+    padding-bottom: 1rem;
   }
   .mobile-dropdown{
     background-color: #FFEBE4;
@@ -210,4 +220,15 @@ button:hover{
   }
   .mobile-dropdown img{
     margin-left: 2.2rem;
+  }
+  section{
+    padding: 2rem 2rem 0 2rem;
+    
+    
+  }
+  footer{
+    padding: 2rem 2.5rem 0 2rem;
+    font-size: .7rem;
+    background-color: #007653;
+    color: white;
   }
