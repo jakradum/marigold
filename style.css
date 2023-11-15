@@ -74,6 +74,7 @@ header.drop{
 }
 li{
     list-style-type: none;
+    padding: .5rem;
 }
 #landing{
     background-image: url(bg.svg);
@@ -87,7 +88,7 @@ li{
     gap: 1rem;
     height: auto;
     text-align: center;
-    margin: 0 1.5rem 0 2rem;
+    margin: 0;
 }
 .headline{
     grid-column: span 7;
@@ -278,7 +279,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     margin-left: 2.2rem;
   }
   section{
-    padding: 3rem;
+    padding: 2rem;
 
   }
   footer{
@@ -290,9 +291,13 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
 
 .quote{
     /* border: solid .05rem black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     border-radius: .5rem;
     padding: 1.5rem;
+    min-height: 17rem;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
@@ -313,11 +318,23 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-}
-table{
-    padding: 1rem;
+    padding: 3rem;
 }
 #compare{
-    max-width: 70%;
     margin: 0 auto;
 }
+#img-box {
+    width: auto;
+    max-width: 80%;
+    max-height: 20rem;
+    display: block;
+    margin: 0 auto;
+}
+.benefits {
+    font-size: clamp(.5rem, 3vw, 1rem);
+    margin: 0 auto;
+}
+td{
+    padding: .5rem;
+}
+
