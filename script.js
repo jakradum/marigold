@@ -20,3 +20,10 @@ function addSticky() {
 }
 window.addEventListener(`scroll`,addSticky);
 
+let compareButton = document.getElementById("switch");
+let sectionToHide = document.querySelectorAll(".flex.compare");
+const hideSec = () => {sectionToHide.forEach(i=>{
+    if(i.classList.contains(`hidden`)){i.classList.remove(`hidden`)}
+    else{i.classList.add(`hidden`)}});}
+compareButton.addEventListener(`click`,hideSec);
+
