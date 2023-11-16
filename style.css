@@ -225,9 +225,15 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     .mobile-menu{
         display: none;
     }
-    #switch{
+    label {
+        display: none;
+        visibility: hidden;
         display: none;
     }
+    .toggle-help{
+        display: none;
+    }
+   
 }
 /* mobile dropdown menu */
 @media screen and (min-width: 1000px) {
@@ -364,4 +370,50 @@ background-size: cover;
     justify-content: space-around; 
     flex-wrap: wrap; 
     height: auto;
+}
+
+/* toggle switch css */
+input{
+    appearance: none;
+}
+label {
+	cursor: pointer;
+	text-indent: -20.813rem;
+	width: 4.125rem;
+	height: 2.06rem;
+	background: #F9A21B;
+	display: block;
+	border-radius: 2.06rem;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: .1rem;
+	left: .1rem;
+	width: 1.875rem;
+	height: 1.875rem;
+	background: #fff;
+	border-radius: 1.875rem;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background:#007653;
+}
+
+input:checked + label:after {
+	left: calc(100% - .1rem);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 2.75rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
