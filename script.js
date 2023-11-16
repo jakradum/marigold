@@ -22,10 +22,19 @@ window.addEventListener(`scroll`,addSticky);
 
 let compareButton = document.getElementById("switch");
 let sectionToHide = document.querySelectorAll(".flex.compare");
-const hideSec = () => {sectionToHide.forEach(i=>{
-    if(i.classList.contains(`hidden`)){i.classList.remove(`hidden`)}
-    else{i.classList.add(`hidden`)}});}
-compareButton.addEventListener(`click`,hideSec);
+const hideSec = () => {
+    sectionToHide.forEach(i => {
+        if (i.classList.contains('hidden')) {
+            i.classList.remove('hidden');
+            i.classList.add('in');
+        } else {
+            i.classList.add('hidden');
+            i.classList.remove('in');
+        }
+    });
+};
+
+compareButton.addEventListener('click', hideSec);
 
 const screenSize = () => {
     if(window.innerWidth>1000){

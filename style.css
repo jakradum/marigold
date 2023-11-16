@@ -45,6 +45,7 @@ header{
     background-color: #007653;
     height: auto;
     color: white;
+    z-index: 100;
 
 }
 header.sticky{
