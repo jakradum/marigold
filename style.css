@@ -476,3 +476,7 @@ margin: 0;
 .getStarted> p{
     text-align: center;
 }
+.community{
+    position: relative;
+    margin-top: 1rem;
+}
