@@ -47,4 +47,14 @@ const screenSize = () => {
 }
 screenSize();
 window.addEventListener('resize', screenSize);
+// read more expand event below
+let readmoreButton = document.querySelector(`.read-more`);
+let hiddenTestimonials = document.querySelectorAll(`.extra-testimonial`);
+
+const expand = () => {hiddenTestimonials.forEach(i=>{
+    i.classList.toggle(`hidden`);
+});
+readmoreButton.classList.add(`hidden`);
+}
+readmoreButton.addEventListener(`click`,expand);
 
