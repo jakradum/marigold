@@ -129,6 +129,7 @@ h2{
     font-size: clamp(1.5rem, 4vw, 2.8rem);
     text-align: center;
     margin: 1rem 0 1rem 0;
+
 }
 h3{
     font-size: clamp(1rem, 4vw, 2rem);
@@ -290,7 +291,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
     margin-left: 2.2rem;
   }
   section{
-    padding: 2rem;
+    padding: 0 3rem 0 3rem;
+
 
   }
   footer{
@@ -301,14 +303,14 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px
   }
 
 .flex{
-    /* border: solid .05rem black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     border-radius: .5rem;
-    padding: 1.5rem;
+    padding: 8%;
     min-height: 17rem;
+    font-size: clamp(.7rem, 2vw, 1rem);
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
@@ -354,12 +356,8 @@ td{
     padding: .5rem;
 }
 .pink-section{
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(233,233,233,1) 100%);
-background-attachment: fixed;
-background-position: center;
-background-repeat: repeat;
-background-size: cover;
+background-color: white;
+
 }
 .hidden{
     display: none;
@@ -382,9 +380,10 @@ label {
 	text-indent: -20.813rem;
 	width: 4.125rem;
 	height: 2.06rem;
-	background: #F9A21B;
+    background: rgb(252,193,101);
+background: linear-gradient(270deg, rgba(252,193,101,1) 0%, rgba(254,156,3,1) 100%);
 	display: block;
-	border-radius: 2.06rem;
+	border-radius: .75rem;
 	position: relative;
 }
 
@@ -396,12 +395,13 @@ label:after {
 	width: 1.875rem;
 	height: 1.875rem;
 	background: #fff;
-	border-radius: 1.875rem;
+	border-radius: .75rem;
 	transition: 0.3s;
 }
 
 input:checked + label {
-	background:#007653;
+	background: rgb(1,163,115);
+    background: linear-gradient(100deg, rgba(1,163,115,1) 0%, rgba(0,118,83,1) 100%);
 }
 
 input:checked + label:after {
@@ -417,4 +417,34 @@ label:active:after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.info.flex{
+    font-size: clamp(.2rem, 3vw, 1rem);
+    
+}
+.boxonbox{
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    padding: .05rem .8rem .05rem .8rem;
+    border-radius: .5rem;
+    border: solid black .08rem;
+    font-size: clamp(.6rem, 2vw, .8rem);
+    text-align: center;
+    background-color:#FFEBE4;
+
+}
+.advantage.flex {
+    position: relative;
+    justify-content: left;
+    box-shadow: none;
+    padding: 3rem 3rem 3rem 1rem;
+    border: black solid .08rem;
+    margin-bottom: 1rem;
+}
+#withnwithout{ /* for blue background in the last section */
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(197,247,249,1) 100%);
 }
