@@ -16,7 +16,7 @@ navToggle.addEventListener(`click`,function(){menuItems.forEach(i=>i.classList.t
 const nav = document.querySelector(`.headersec`);
 function addSticky() {
     const scrollDepth = (window.scrollY/(document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    if(scrollDepth>35){nav.classList.add(`sticky`);nav.classList.add(`active`)}else{;nav.classList.remove(`active`);}
+    if(scrollDepth>25){nav.classList.add(`sticky`);nav.classList.add(`active`)}else{;nav.classList.remove(`active`);}
 }
 window.addEventListener(`scroll`,addSticky);
 
