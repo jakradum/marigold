@@ -447,7 +447,8 @@ td{
     padding: .5rem;
 }
 .pink-section{
-background-color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(227,227,227,1) 48%, rgba(255,255,255,1) 100%);
 
 }
 .hidden{
@@ -571,5 +572,6 @@ margin: 0;
 .getStarted.flex>.grid>*{
     margin-bottom: 1rem;
 }
+
 
 
