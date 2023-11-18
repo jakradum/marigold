@@ -37,7 +37,7 @@ const hideSec = () => {
 compareButton.addEventListener('click', hideSec);
 
 const screenSize = () => {
-    if(window.innerWidth>1000){
+    if(window.innerWidth>600){
         sectionToHide.forEach(i=>{
             i.classList.remove(`hidden`)
         });
