@@ -20,34 +20,6 @@ function addSticky() {
 }
 window.addEventListener(`scroll`,addSticky);
 
-let compareButton = document.getElementById("switch");
-let sectionToHide = document.querySelectorAll(".flex.compare");
-const hideSec = () => {
-    sectionToHide.forEach(i => {
-        if (i.classList.contains('hidden')) {
-            i.classList.remove('hidden');
-            i.classList.add('in');
-        } else {
-            i.classList.add('hidden');
-            i.classList.remove('in');
-        }
-    });
-};
-
-compareButton.addEventListener('click', hideSec);
-
-const screenSize = () => {
-    if(window.innerWidth>600){
-        sectionToHide.forEach(i=>{
-            i.classList.remove(`hidden`)
-        });
-    }else{
-        sectionToHide[0].classList.add(`hidden`);
-    }
-}
-screenSize();
-window.addEventListener('resize', screenSize);
-// read more expand event below
 let readmoreButton = document.querySelector(`.read-more`);
 let hiddenTestimonials = document.querySelectorAll(`.extra-testimonial`);
 
