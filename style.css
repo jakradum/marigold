@@ -634,6 +634,10 @@ summary:hover {
     margin-top: 0;
     padding-top: 0;
 }
+section .contact-intro{
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: clamp(.7rem, 3vw, 1rem);
+}
 
 
 
